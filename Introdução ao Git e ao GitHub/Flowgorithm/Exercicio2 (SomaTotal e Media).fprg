@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="raryo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-19 08:45:32 "/>
+        <attribute name="created" value="cmFyeW87TEFQVE9QLUhQTTcwRDVBOzIwMjItMDQtMTk7IjA2OjQyOjQzICI7Mjc3OA=="/>
+        <attribute name="edited" value="cmFyeW87TEFQVE9QLUhQTTcwRDVBOzIwMjItMDQtMTk7IjA4OjQ1OjMyICI7NTsyODkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nota1, Nota2, Nota3, Nota4, Media, Total" type="Real" array="False" size=""/>
+            <declare name="NomeAluno" type="String" array="False" size=""/>
+            <output expression="&quot;Digite o nome do aluno &quot;" newline="True"/>
+            <input variable="NomeAluno"/>
+            <input variable="Nota1"/>
+            <input variable="Nota2"/>
+            <input variable="Nota3"/>
+            <input variable="Nota4"/>
+            <assign variable="Media" expression="(Nota1 + Nota2 + Nota3 + Nota4)/4"/>
+            <assign variable="Total" expression="Nota1 + Nota2 + Nota3 + Nota4"/>
+            <output expression="&quot;O total das notas do aluno &quot; &amp; NomeAluno &amp; &quot; &#233; igual a: &quot; &amp; Total &amp; &quot; sua m&#233;dia final &#233;: &quot; &amp; Media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
